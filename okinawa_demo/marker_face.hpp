@@ -1,0 +1,31 @@
+/* 
+ * marker_face.hpp
+ */
+
+#ifndef __MARKER_FACE_HPP__
+#define __MARKER_FACE_HPP__
+
+#include <vector>
+#include <string>
+using namespace std;
+
+#include <GL/glut.h>
+#include <FTGL/ftgl.h>
+#include "artkglut_marker.hpp"
+
+class Marker_Face : public ARTKGLUT_Marker
+{
+public:
+	Marker_Face();
+	~Marker_Face();
+	int draw();
+	int process(bool b);
+	
+protected:
+	FTGLTextureFont *_font1;
+	GLuint _panelList;
+
+};
+
+#endif
+

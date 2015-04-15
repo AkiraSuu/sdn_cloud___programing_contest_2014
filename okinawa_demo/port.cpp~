@@ -1,0 +1,17 @@
+/* 
+ * port.cpp
+ */
+
+#include "port.hpp"
+
+Port::Port(int id, string num)
+{
+	_id = id;
+	_num = num;
+}
+
+Port::~Port()
+{
+
+}
+
